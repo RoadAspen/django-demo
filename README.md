@@ -1,4 +1,4 @@
-# django-demo
+# django-demo<https://docs.djangoproject.com/zh-hans/3.0/intro/tutorial01/>
 
 > django 官网 跟随练习  
 > 1、git clone 之后，在项目根目录 先 执行 python -m venv venv ,进入 venv/Scripts文件夹，   
