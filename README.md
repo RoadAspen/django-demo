@@ -1,6 +1,6 @@
-# django-demo<https://docs.djangoproject.com/zh-hans/3.0/intro/tutorial01/>
+# django-demo
 
-> django 官网 跟随练习  
+> django官网[https://docs.djangoproject.com/zh-hans/3.0/intro/tutorial01/]  跟随练习  
 > 1、git clone 之后，在项目根目录 先 执行 python -m venv venv ,进入 venv/Scripts文件夹，   
 > 2、windows 打开 CMD 执行 activate.bat， mac os 执行 source activate 进入 python 虚拟环境   
 > 3、在虚拟环境中，cd 到项目根目录  
