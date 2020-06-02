@@ -1,6 +1,14 @@
 # django-demo
 
-> django 官网 跟随练习
+> django 官网 跟随练习  
+> 1、git clone 之后，在项目根目录 先 执行 python -m venv venv ,进入 venv/Scripts文件夹，   
+> 2、windows 打开 CMD 执行 activate.bat， mac os 执行 source activate 进入 python 虚拟环境   
+> 3、在虚拟环境中，cd 到项目根目录  
+> 4、执行 pip install -r requirements.txt  
+> 5、依次执行 1、python manage.py makemigrations  2、 python manage.py migrate    3、python manage.py runserver
+> 6、浏览器打开  localhost:8000/polls/ 查看 练习  
+> 7、虚拟环境 执行 python manage.py createsuperuser 根据提示 创建 admin 超级管理员 账号密码  
+> 8、浏览器打开 localhost:8000/admin 输入 刚刚创建的 superuser 账号密码 登录 django admin 后台
 
 + settings
     - BASE_DIR 项目绝对路径
