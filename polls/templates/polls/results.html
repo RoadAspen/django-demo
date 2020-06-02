@@ -1,3 +1,4 @@
+
 <h1>{{ question.question_text }}</h1>
 
 <ul>
@@ -7,3 +8,4 @@
 </ul>
 
 <a href="{% url 'polls:detail' question.id %}">Vote again?</a>
+<a href="{% url 'polls:index' %}">去问题列表页</a>

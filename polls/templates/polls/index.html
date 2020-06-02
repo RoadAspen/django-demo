@@ -1,3 +1,7 @@
+{% load static %}
+<!-- static 会生成文件的绝对路径-->
+<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
+
 {% if latest_question_list %}
 <ul>
     {% for question in latest_question_list %}

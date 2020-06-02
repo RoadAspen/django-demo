@@ -8,8 +8,15 @@ app_name, 那么相应的 templates 中 的 url 也要加上命名空间 {% url 
 """
 app_name = 'polls'
 urlpatterns = [
-    path('', views.index, name='index'),
-    path('<int:pk>/', views.detail, name='detail'),
-    path('<int:pk>/results/', views.results, name='results'),
+    # 最原始的基础 url 以及 view 函数
+    # path('', views.index, name='index'),
+    # path('<int:pk>/', views.detail, name='detail'),
+    # path('<int:pk>/results/', views.results, name='results'),
+    # path('<int:pk>/vote/', views.vote, name='vote'),
+
+    # 使用view 通用视图
+    path('', views.IndexView.as_view(), name='index'),
+    path('<int:pk>/', views.DetailView.as_view(), name='detail'),
+    path('<int:pk>/results/', views.ResultView.as_view(), name='results'),
     path('<int:pk>/vote/', views.vote, name='vote'),
 ]
