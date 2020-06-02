@@ -31,8 +31,14 @@
         - template_name 模板的路径名
         - context_object_name 传入模板的变量名
         - 如果需要筛选或者自定义返回queryset，则需要覆写 queryset 或者 在 get_queryset return 之前做一些事情
-     - loader.get_template 获取模板资源
+    - loader.get_template 获取模板资源
     - render 默认实现了loader.get_template 和 template.render_to_string 方法
+    - HttpResponse 用来返回格式化数据
+    - Http404 返回一个 404 的 结果
+    - Response 会根据 request 的 accept 字段来 协商需要返回的数据格式
+    - status , status 提供语义化的 状态码 ，如 HTTP_200_ok  , HTTP_404_NOT_FOUND
+    - get_object_or_404 提供的获取 detail 的快捷方式，用于代替 try Model.objects.get(pk=pk) except raise 抛错
+    - get_list_or_404 提供的 filter 的快捷方式,用于代替 ltry Model.objects.filter(pk=pk) == None except raise 抛错
    
 + templates
     - 模板文件夹，html 包含模板语法，语法可以采用{% %} 包裹的 for if 以及 load static 之后的 static 和 url 语法，还有 model语法
